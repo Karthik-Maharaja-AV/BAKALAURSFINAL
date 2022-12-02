@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "type":"checkbox",
+        "name": "create",
+        "question": "Create a new website",
+        "options": [
+            {
+                "id": 1,
+                "category": "create",
+                "name": "Blogs"
+            },
+            {
+                "id": 1,
+                "category": "create",
+                "name": " eCommerce - sell products/services"
+            },
+            {
+                "id": 3,
+                "category": "create",
+                "name": "Live chat"
+            },
+            {
+                "id": 4,
+                "category": "create",
+                "name": " Media and documentation hosting"
+            },
+            {
+                "id": 5,
+                "category": "create",
+                "name": "Social Media Integration"
+            },
+            {
+                "id": 6,
+                "category": "create",
+                "name":"User self-management e.g.user accounts"            
+            }
+        ]
+    }
+]

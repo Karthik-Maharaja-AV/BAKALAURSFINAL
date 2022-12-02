@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fd38482e0d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="accordion.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>BAKALAURS</title>
+    <script src="index.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("rVBOnUHRNlqhGSeWE");
+   })();
+</script>
+</head>
+<body>
+    <section>
+        <div class="bg-black/50 flex items-center px-20 py-5 justify-between text-white ">
+            <div class="w-24 flex items-center text-xl gap-4">
+                <img src="./assets/images/logo1-162x159.png" alt="">
+                <h1>BAKALAURS</h1>
+            </div>
+            <div>
+                <a class="text-xl" href="accordion.html">Back</a>
+            </div>
+        </div>
+    </section>
+
+    <div class=" flex flex-col gap-10 items-center justify-center">
+            <div class="text-white  text-bold text-5xl">
+                <h1 class="mt-10 ">Describe....</h1>
+            </div>
+            <div class="flex p-10 border md:w-6/12 md:h-10/12 items-center justify-center">
+            <form method="POST" class="text-white flex flex-col gap-4">
+                <div class="flex flex-col w-72">
+                    <label for="Name">Name</label>
+                    <input class="h-6 text-black" type="text"  name="Name" id="Name">
+                </div>
+                <div class="flex flex-col w-72">
+                    <label for="Email">Email</label>
+                    <input class="h-6 text-black" type="email" name="Email" id="Email">
+                </div>
+                <div class="flex flex-col w-72">
+                    <label for="phnumber">Phone no</label>
+                    <input class="h-6 text-black" type="tel" id="phnumber" name="phnumber">
+                </div>
+                <div class="flex flex-col w-72">
+                    <label for="">Category</label>
+                    <select name="webtype" id="webtype" class="text-black w-72 text-xl">
+                        <option value="">Blogs</option>
+                        <option value="">eCommerce - sell products/services</option>
+                        <option value="">Live chat</option>
+                        <option value="">Media and documentation hosting</option>
+                        <option value="">Social media integration</option>
+                        <option value="">User self-management e.g.user accounts</option>
+                    </select>
+                </div>
+                <div class="flex flex-col w-72">
+                    <label for="Budget">Budget</label>
+                    <select name="requests" id="request" class="text-black w-72 text-lg">
+                        <option value="">Create a new Website</option>
+                        <option value="">Redesign existing Website</option>
+                        <option value="">Make some changes in my existing website</option>
+                    </select>
+                </div>
+                <div class="flex flex-col w-72">
+                    <label for="Budget">Budget</label>
+                    <select name="" id="Budget" class="text-black w-72 text-lg">
+                        <option value="">below Rs. 2.5K</option>
+                        <option value="">Rs. 2.5K to Rs. 10K</option>
+                        <option value="">Rs. 10K to Rs. 20K</option>
+                        <option value="">Rs. 20K to Rs. 50K</option>
+                        <option value="">Rs. 50K and above</option>
+                        </select>
+                </div>
+                <div class="flex flex-col w-72">
+                    <label for="">Describe your Dream website</label>
+                    <textarea class="w-72 h-auto text-black" id="message" name="message"></textarea>
+                </div>
+                <div class="flex items-center justify-center">
+                    <input type="submit" onclick="sendMail()" class="w-20 h-8 text-xs md:w-28 md:text-sm xl:text-md xl:w-28 xl:h-10 bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800  font-semibold text-white rounded-full">
+                </div>
+            </form>
+            </div>
+        </div>  
+</body>
+</html>
